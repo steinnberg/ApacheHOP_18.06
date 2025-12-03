@@ -23,9 +23,12 @@ Expression :
 
 ```java
 email.substring(email.indexOf("@") + 1)
+```
+
 Résultat :
 example.com, dupont.fr, etc.
 
+---
 ### 🔥 Amélioration C — Ajouter une gestion des erreurs
 Ajouter une sortie "NOK" depuis Filter Rows :
 
