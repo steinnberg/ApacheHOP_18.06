@@ -41,7 +41,7 @@ Rends-toi sur le site officiel :
 
 Télécharge :
 
-apache-hop-client-<version>-v2.8.0.zip
+apache-hop-client-<version>-v2.16.0.zip
 
 
 Exemple :
