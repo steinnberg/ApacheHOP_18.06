@@ -1,0 +1,20 @@
+# Data (NE JAMAIS versionner)
+Projet_Final/dataset/
+data/
+*.csv
+*.parquet
+*.db
+*.duckdb
+
+
+# Big data archives
+*.zip
+*.tar.gz
+
+# Logs
+logs/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
