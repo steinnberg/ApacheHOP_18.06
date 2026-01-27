@@ -4,7 +4,7 @@
 ---
 
 ## 🎯 Objectifs pédagogiques
-À l’issue de ce module, l’étudiant sera capable de :
+À l’issue de ce module, vous serez capable de :
 - Analyser un dataset réel et volumineux
 - Identifier des problèmes de qualité de données
 - Construire un pipeline ETL local avec Apache Hop
