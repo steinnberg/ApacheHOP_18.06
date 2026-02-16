@@ -1,0 +1,69 @@
+mindmap
+  root((Apache HOP))
+
+    Sources
+      Files
+        CSV
+        JSON
+        XML
+        Parquet
+      SQL Databases
+        PostgreSQL
+        MySQL
+        SQL Server
+      APIs
+        REST
+        SOAP
+      Cloud
+        S3
+        Azure Blob
+      Streaming
+        Kafka
+
+    Transformations
+      Cleaning
+        Filter Rows
+        Select Values
+        Replace Nulls
+      Enrichment
+        Join
+        Lookup
+        Merge
+      Aggregation
+        Group By
+        Sort
+      Data Quality
+        Validation Rules
+        Error Streams
+      Metadata Driven
+        Variables
+        Parameters
+
+    Outputs
+      SQL Storage
+        Data Warehouse
+      MongoDB
+        Documents
+        JSON Mapping
+      Neo4j
+        Nodes
+        Relationships
+        Cypher
+      Spark
+        Distributed Processing
+      Files
+        CSV
+        JSON
+        Parquet
+
+    Orchestration
+      Workflows
+      Conditional Branching
+      Retry Logic
+      Scheduling
+
+    Monitoring
+      Logging
+      Metrics
+      Audit Tables
+      Alerts
