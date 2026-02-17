@@ -74,17 +74,20 @@ Pourquoi utilisons-nous d:Driver ?
 
 # 🧪 Étape 3 — CREATE relation
 Créer une relation entre Alice et Manhattan :
-
+```cypher
 MATCH (d:Driver {name: "Alice"})
 MATCH (z:Zone {name: "Manhattan"})
 CREATE (d)-[:DRIVES_IN]->(z)
+```
 Observer le graphe.
 
 # 🧪 Étape 4 — MATCH avec pattern
+```cypher
 MATCH (d:Driver)-[:DRIVES_IN]->(z:Zone)
 RETURN d.name, z.name
+```
 Comprendre :
-Cypher est un langage basé sur des patterns graphiques.
+- Cypher est un langage basé sur des patterns graphiques.
 
 # 🧪 Étape 5 — MERGE (clé conceptuelle)
 ⚠️ CREATE crée toujours un nouvel objet.
