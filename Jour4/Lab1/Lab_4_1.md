@@ -82,10 +82,12 @@ CREATE (d)-[:DRIVES_IN]->(z)
 Observer le graphe.
 
 # 🧪 Étape 4 — MATCH avec pattern
+```cypher
 MATCH (d:Driver)-[:DRIVES_IN]->(z:Zone)
 RETURN d.name, z.name
+```
 Comprendre :
-Cypher est un langage basé sur des patterns graphiques.
+- Cypher est un langage basé sur des patterns graphiques.
 
 # 🧪 Étape 5 — MERGE (clé conceptuelle)
 ⚠️ CREATE crée toujours un nouvel objet.
