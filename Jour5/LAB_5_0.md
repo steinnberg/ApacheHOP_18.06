@@ -172,6 +172,18 @@ Voir :
   financial: { total: 12.3, distance: 2.4 }
 }
 ```
+#### Pourquoi on fait comme ça ?
+
+Parce que :
+
+>Atlas UI ≠ mongo shell
+
+>Il fonctionne avec :
+
+>Aggregation stages
+
+>Pas commandes shell complètes
+
 
 ## Étape 2 — Supprimer les anciens champs plats
 ```js
