@@ -250,3 +250,15 @@ db.trips.aggregate([
 ])
 ```
 
+---
+### Note de fin 
+
+**Mongo** est intéressant  !?
+
+Parce que :
+
+- On n’a pas besoin de JOIN
+
+- On travaille directement sur des champs imbriqués
+
+- La structure est flexible
