@@ -44,17 +44,17 @@ dropoff_zone ->	dropoffZone
 
 Puis OK.
 
-🔍 Pourquoi utiliser Select Values ?
+### 🔍 Pourquoi utiliser Select Values ?
 
 Ce step permet :
 
-Renommer
+- Renommer
 
-Supprimer colonnes inutiles
+- Supprimer colonnes inutiles
 
-Changer type (int → string)
+- Changer type (int → string)
 
-Réordonner
+- Réordonner
 
 ---
 
