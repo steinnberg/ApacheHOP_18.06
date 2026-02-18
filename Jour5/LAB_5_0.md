@@ -57,11 +57,13 @@ https://www.mongodb.com/atlas
 
 3️⃣ Créer Collection : trips
 
-4️⃣ Cliquer sur "Add Data"
+4️⃣ Via MongoDB Compass (interface graphique)
 
-5️⃣ Upload CSV
-
-6️⃣ Cocher "First row as header"
+    - 1️⃣ Télécharger MongoDB Compass
+    - 2️⃣ Connecter à Atlas
+    - 3️⃣ Ouvrir ta collection trips
+    - 4️⃣ Cliquer sur Add Data → Import File
+    - 5️⃣ Choisir CSV
 
 ⚠️ Mongo va créer un document plat :
 
