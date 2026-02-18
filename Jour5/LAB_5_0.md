@@ -52,10 +52,15 @@ https://www.mongodb.com/atlas
 ## Option simple (sans Python)
 
 1️⃣ Dans Atlas → Data Explorer
+
 2️⃣ Créer Database : taxiDB
+
 3️⃣ Créer Collection : trips
+
 4️⃣ Cliquer sur "Add Data"
+
 5️⃣ Upload CSV
+
 6️⃣ Cocher "First row as header"
 
 ⚠️ Mongo va créer un document plat :
