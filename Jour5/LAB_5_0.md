@@ -105,6 +105,73 @@ db.trips.updateMany(
   ]
 )
 ```
+### Solution SIMPLE et 100% compatible avec Data Explorer
+
+Utiliser une Aggregation Pipeline puis enregistrer le résultat.
+
+* ✅ Étape 1 — Aller dans “Aggregations”
+
+Dans taxiDB → trips :
+
+Clique sur **Aggregations**
+
+* ✅ Étape 2 — Ajouter un stage $set
+
+Clique “Add Stage”
+Choisis $set
+
+Coller uniquement ceci :
+```
+{
+  "vendorId": "$VendorID",
+  "route": {
+    "from": "$PULocationID",
+    "to": "$DOLocationID"
+  },
+  "financial": {
+    "total": "$total_amount",
+    "distance": "$trip_distance"
+  }
+}
+```
+
+* ✅ Étape 3 — Ajouter un stage $merge
+
+Clique “Add Stage”
+Choisis $merge
+
+Coller :
+```
+{
+  "into": "trips",
+  "whenMatched": "merge",
+  "whenNotMatched": "discard"
+}
+```
+
+#### 🎯 Puis cliquer “Run”
+
+Cela va :
+
+* Transformer chaque document
+
+* Ajouter les champs imbriqués
+
+* Mettre à jour la collection
+
+#### 🔎 Vérifier
+
+Retourner dans Documents
+Cliquer sur un document
+
+Voir :
+```
+{
+  vendorId: 1,
+  route: { from: 41, to: 42 },
+  financial: { total: 12.3, distance: 2.4 }
+}
+```
 
 ## Étape 2 — Supprimer les anciens champs plats
 ```js
